@@ -123,6 +123,11 @@
 @media (max-width: 768px) {
   .wwd {
     padding: 80px 20px;
+    justify-content: center;
+  }
+
+  .wwd__background {
+    height: 280%;
   }
 
   .wwd__cards {
