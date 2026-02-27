@@ -1,0 +1,178 @@
+.header__config {
+  color: #febd59;
+  color: #92c1f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 13vh;
+  background-color: white;
+}
+
+.header__logo-cont {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+}
+
+.header__logo {
+  width: 12vh;
+  height: 12vh;
+  /* animation: rotate-logo 6s linear infinite; */
+}
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(280deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header__title {
+  width: 30vh;
+  height: 30vh;
+  position: absolute;
+  left: 4vw;
+  /* animation: left 6s linear infinite; */
+}
+
+@keyframes left {
+  0% {
+    left: 6vh;
+  }
+  10% {
+    left: 8vh;
+  }
+  20% {
+    left: 10vh;
+  }
+  100% {
+    left: 6vh;
+  }
+}
+
+.header__nav {
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+  z-index: 10;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #febd59;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: "Mike", sans-serif;
+}
+
+.header__nav-link:hover {
+  color: #92c1f5;
+  background-color: rgba(254, 189, 89, 0.1);
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .header {
+    height: 5vh;
+  }
+
+  .header__logo {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .header__title {
+    width: 25vh;
+    height: 25vh;
+  }
+
+  .header__nav {
+    gap: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .header__nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .header {
+    height: 5vh;
+    padding: 0 1rem;
+  }
+
+  .header__logo {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .header__title {
+    width: 12vh;
+    height: 12vh;
+    position: absolute;
+    left: 4vw;
+  }
+
+  .header__nav {
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+
+  .header__nav-link {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .header {
+    height: 5vh;
+    padding: 0 0.8rem;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .header__logo {
+    width: 3.5vh;
+    height: 3.5vh;
+    min-width: 0;
+  }
+
+  .header__title {
+    width: 10vh;
+    height: 10vh;
+    left: 7vw;
+    max-width: 100%;
+  }
+
+  .header__nav {
+    gap: 0.3rem;
+    margin-right: 0.6rem;
+    flex-wrap: nowrap;
+  }
+
+  .header__nav-link {
+    font-size: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,70 @@
+/* Koh Santepheap Light - 300 */
+@font-face {
+  font-family: "Koh Santepheap";
+  src: url("/public/fonts/KohSantepheap-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Koh Santepheap Regular - 400 */
+@font-face {
+  font-family: "Koh Santepheap";
+  src: url("/public/fonts/KohSantepheap-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Koh Santepheap Bold - 700 */
+@font-face {
+  font-family: "Koh Santepheap";
+  src: url("/public/fonts/KohSantepheap-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Koh Santepheap Black - 900 */
+@font-face {
+  font-family: "Koh Santepheap";
+  src: url("/public/fonts/KohSantepheap-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kan";
+  src: url("/public/fonts/KantumruyPro-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mike";
+  src: url("/public/fonts/Michroma-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional CSS classes */
+.koh-santepheap-light {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 300;
+}
+.koh-santepheap-regular {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 400;
+}
+.koh-santepheap-bold {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 700;
+}
+.koh-santepheap-black {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 900;
+}

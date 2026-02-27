@@ -1,0 +1,159 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero__logo {
+  width: 60vw;
+  height: auto;
+  margin-top: 0;
+  position: absolute;
+  top: 20px;
+  animation: grow-fadeIn 3s ease-in;
+}
+
+@keyframes grow-fadeIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hero__subtitle {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Mike", sans-serif;
+  position: absolute;
+  top: 80vh;
+}
+
+.hero__scroll-arrow {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-15px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-7px);
+  }
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .hero__logo {
+    width: 50vw;
+    top: 25px;
+  }
+
+  .hero__subtitle {
+    font-size: 1.5rem;
+    top: 85vh;
+  }
+
+  .hero__scroll-arrow {
+    bottom: 12px;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero__logo {
+    width: 70vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem;
+    top: 80vh;
+    text-align: center;
+    width: 90%;
+    left: 5%;
+  }
+
+  .hero__scroll-arrow {
+    bottom: 10px;
+  }
+
+  .hero__scroll-arrow svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .hero {
+    height: 85vh;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .hero__logo {
+    width: 80vw;
+    max-width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    top: 75vh;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .hero__scroll-arrow {
+    bottom: 8px;
+  }
+
+  .hero__scroll-arrow svg {
+    width: 25px;
+    height: 25px;
+  }
+}
